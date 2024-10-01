@@ -1,0 +1,14 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helpful writing editor. You select your words carefully, and you try to make your point short and concise."
+    },
+    {
+        "role": "user",
+        "content": "hey"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello! How can I assist you?"
+    }
+]
