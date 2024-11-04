@@ -14,6 +14,7 @@ should be O(n) time complexity
 // first iteration
 // theoretically count could be replaced by nums.length - carryon.length
 // prev could be replaced by nums[i - 1]
+// in fact, i dont think i even need the array carryon; just need a counter
 function removeDuplicates(nums){
     // nums in non decreasing order
     let carryon = [];
@@ -31,3 +32,17 @@ function removeDuplicates(nums){
         }
     }
 }
+
+// second iteration
+/**
+    let count = 0;
+    for(let i = 0; i < nums.length; i++){
+        if(nums[i] == nums[i-1] && i > 0){
+            count++;
+        }
+        else{
+            nums[i - count] = nums[i];
+        }
+    }
+    return nums.length - count;
+ */
