@@ -44,6 +44,7 @@ Return the minimum number of candies you need to have to distribute the candies 
 // };
 
 // iteration 2
+// the idea of solving this from both sides of the arr is interesting.
 function candy(ratings) {
     let n = ratings.length;
     let distribution = new Array(n).fill(1);
